@@ -3,65 +3,51 @@ package main;
 import java.util.*;
 	
 public class Main {
-	
-	public static class Character{
-		public static int Hp = 30;
-		public static int MAX_HP = 999;
-		public static int Sp = 13;
-		public static int MAX_SP = 100;
-		public static int Mp = 20;
-		public static int MAX_MP = 500;		
-	}
-	
-	public static class Monster{
-		public static int Hp, MAX_HP, Sp, MAX_SP;
-	}
-
 	public static void main(String[] args) throws InputMismatchException{
 		// TODO Auto-generated method stub
-		System.out.println("¿À´Ã Àú³á ¹¹¸ÔÁö?");
+		System.out.println("ì˜¤ëŠ˜ ì €ë… ë­ë¨¹ì§€?");
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("1. ½ÜÀÌ »çÁØ Ä¡Å²");
-		System.out.println("2. ½ÜÀÌ »çÁØ ÇÇÀÚ");
-		System.out.println("3. ½ÜÀÌ »çÁØ ÇÜ¹ö°Å");
-		System.out.println("4. ½ÜÀÌ »çÁØ ÇØÀå±¹");
-		System.out.println("5. ¾È¸Ô¾î");
+		System.out.println("1. ìŒ¤ì´ ì‚¬ì¤€ ì¹˜í‚¨");
+		System.out.println("2. ìŒ¤ì´ ì‚¬ì¤€ í”¼ì");
+		System.out.println("3. ìŒ¤ì´ ì‚¬ì¤€ í–„ë²„ê±°");
+		System.out.println("4. ìŒ¤ì´ ì‚¬ì¤€ í•´ì¥êµ­");
+		System.out.println("5. ì•ˆë¨¹ì–´");
 		
-		System.out.print("1~5±îÁöÁß¿¡ 1°³¸¸ ¼±ÅÃÇÏ½Ã¿À(¼ıÀÚ·Î ÀÔ·Â) : ");
+		System.out.print("1~5ê¹Œì§€ì¤‘ì— 1ê°œë§Œ ì„ íƒí•˜ì‹œì˜¤(ìˆ«ìë¡œ ì…ë ¥) : ");
 		
 	
 		while(true) {
 			int ju_nyuc = sc.nextInt();
 			try {
 				if(ju_nyuc == 1) {
-					System.out.println("¿ÀÄÉ ¤¡¤¡");
-					System.out.print("¿À´Ã Àú³áÀº ½ÜÀÌ »çÁØ Ä¡Å²ÀÌ´ß!!");
+					System.out.println("ì˜¤ì¼€ ã„±ã„±");
+					System.out.print("ì˜¤ëŠ˜ ì €ë…ì€ ìŒ¤ì´ ì‚¬ì¤€ ì¹˜í‚¨ì´ë‹­!!");
 					break;
 				}
 				else if(ju_nyuc == 2) {
-					System.out.println("¿ÀÄÉ ¤¡¤¡");
-					System.out.print("¿À´Ã Àú³áÀº ½ÜÀÌ »çÁØ ÇÇÀÚ´ç!!");
+					System.out.println("ì˜¤ì¼€ ã„±ã„±");
+					System.out.print("ì˜¤ëŠ˜ ì €ë…ì€ ìŒ¤ì´ ì‚¬ì¤€ í”¼ìë‹¹!!");
 					break;
 				}
 				else if(ju_nyuc == 3) {
-					System.out.println("¿ÀÄÉ ¤¡¤¡");
-					System.out.print("¿À´Ã Àú³áÀº ½ÜÀÌ »çÁØ ÇÜ¹ö°Å´ç!!");
+					System.out.println("ì˜¤ì¼€ ã„±ã„±");
+					System.out.print("ì˜¤ëŠ˜ ì €ë…ì€ ìŒ¤ì´ ì‚¬ì¤€ í–„ë²„ê±°ë‹¹!!");
 					break;
 				}
 				else if(ju_nyuc == 4) {
-					System.out.println("¿ÀÄÉ ¤¡¤¡");
-					System.out.print("¿À´Ã Àú³áÀº ½ÜÀÌ »çÁØ ÇØÀå±¹ÀÌ´ç!!!");
+					System.out.println("ì˜¤ì¼€ ã„±ã„±");
+					System.out.print("ì˜¤ëŠ˜ ì €ë…ì€ ìŒ¤ì´ ì‚¬ì¤€ í•´ì¥êµ­ì´ë‹¹!!!");
 					break;
 				}
 				else if(ju_nyuc == 5) {
-					System.out.println("¾ÈµÅ!! ¾ò¾î¸Ô¾î¾ßÁö Á© ¸ÀÀÖ¾î!!");
-					System.out.print("´Ù½Ã °ñ¶óºÁ...");
+					System.out.println("ì•ˆë¼!! ì–»ì–´ë¨¹ì–´ì•¼ì§€ ì ¤ ë§›ìˆì–´!!");
+					System.out.print("ë‹¤ì‹œ ê³¨ë¼ë´...");
 				}
 				else {
-					System.out.println("1~5±îÁö¸¸ µÅ!!");
-					System.out.print("´Ù½Ã ½á!!!");
+					System.out.println("1~5ê¹Œì§€ë§Œ ë¼!!");
+					System.out.print("ë‹¤ì‹œ ì¨!!!");
 				}
 			}catch(InputMismatchException e) {
 				e.printStackTrace();
